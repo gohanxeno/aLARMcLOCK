@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALARM CLOCK </title>
+    <link rel="icon" type="image/x-icon" href="F:/AlarmClock/dl.png">
+</head>
+
+<body>
+    <div class="center">
+        <div class = "main">
+    <marquee class="ma"  direction = "left" loop="" >
+        <div class="g1">Set Alarm To Wake Up, Sleep, Rest, Daily Activity </div>
+    </marquee>
+    </div>
+        <h1 class="title"> ALARM </h3> 
+            <div>
+                <!-- Display REAL time -->
+                <h2 id="realtime">Finding the real time</h2>
+
+                <!-- alarm to be set -->
+                <div class="alarmtimebody">
+                    <label>
+                        <div>
+                            <select class="time" id="hr"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="min"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="sec"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="ampm"></select>
+                        </div>
+                    </label>
+                </div>
+            </div>
+              
+            <!-- Add new alarm -->
+            <button id="setButton">Set</button>
+
+            <!-- Clear button to stop the alarm -->
+            <button id="setClear">Clear</button>
+
+            <div>
+                <h3 class="allalarms">ALARMS</h3>
+                <hr>
+                <!-- recent alarm set by the user -->
+                <ul id="incomplete-alarms">
+
+                </ul>
+            </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
